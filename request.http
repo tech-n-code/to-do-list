@@ -1,2 +1,28 @@
-###
-GET http://localhost:3000/api/test
+### Hello, World!
+GET http://localhost:3000/test
+
+### All Tasks
+GET http://localhost:3000/api/tasks
+
+### Task by id
+GET http://localhost:3000/api/task/2
+
+### CREATE
+POST http://localhost:3000/api/task
+Content-Type: application/json
+
+{
+    "task_body": "New task 2!"
+}
+
+### UPDATE by id
+PUT http://localhost:3000/api/task/7
+Content-Type: application/json
+
+{
+    "task_body": "New task 2!",
+    "completed": "true"
+}
+
+### DELETE by id
+DELETE http://localhost:3000/api/task/7
